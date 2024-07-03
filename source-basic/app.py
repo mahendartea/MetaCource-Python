@@ -4,6 +4,7 @@ import platform
 import os
 import numpy as np
 
+
 hasil = tambah(10, 20)
 
 datakita = data
