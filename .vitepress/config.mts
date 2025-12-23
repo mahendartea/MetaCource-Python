@@ -53,10 +53,12 @@ export default defineConfig({
                 collapsed: false,
                 items: [
                     { text: '16. Database SQLite', link: '/Database' },
-                    { text: '📌 Project Data Siswa', link: '/source-database/README' },
+                    { text: '17. Database MySQL', link: '/DatabaseMySQL' },
+                    { text: '18. Module Numpy', link: '/ModuleNumpy' },
                 ]
             }
         ],
+
 
 
         socialLinks: [
