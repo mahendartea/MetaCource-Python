@@ -1,0 +1,60 @@
+name: Deploy VitePress site to Pages
+
+on:
+  # Trigger saat ada push ke branch main
+  push:
+    branches: [main]
+
+  # Izinkan deploy manual dari tab Actions
+  workflow_dispatch:
+
+# Permissions yang dibutuhkan untuk GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Izinkan hanya satu deployment yang berjalan dalam satu waktu
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # Job untuk build
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Tidak perlu full history untuk build
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build with VitePress
+        run: npm run docs:build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .vitepress/dist
+
+  # Job untuk deploy
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
