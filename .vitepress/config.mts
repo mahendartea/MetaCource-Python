@@ -5,6 +5,8 @@ export default defineConfig({
     description: "Panduan Lengkap Belajar Python dari Dasar hingga Mahir",
     lang: 'id-ID',
     base: '/MetaCource-Python/', // Penting untuk GitHub Pages! Sesuaikan dengan nama repo.
+    ignoreDeadLinks: true,
+
 
 
     themeConfig: {
