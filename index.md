@@ -4,41 +4,78 @@ layout: home
 hero:
   name: Gua Ilmu Pemrograman
   text: Tutorial Python Modern
-  tagline: Belajar Python dari nol hingga mahir. Oleh Mahendar Dwi Payana.
-
+  tagline: Belajar Python dari nol hingga mahir dengan panduan Bahasa Indonesia yang lengkap dan terstruktur.
+  image:
+    src: /logo.png
+    alt: Logo Gua Ilmu Pemrograman
   actions:
     - theme: brand
-      text: Mulai Belajar Sekarang
+      text: 🚀 Mulai Belajar Sekarang
       link: /Pendahuluan
     - theme: alt
-      text: Lihat Materi Database
-      link: /Database
+      text: 📂 Lihat Source Code
+      link: https://github.com/mahendartea/MetaCource-BasicPython
 
 features:
-  - title: Terstruktur
-    details: Materi disusun bertahap mulai dari dasar, menengah, hingga database engineering.
-  - title: Praktis & Langsung
-    details: Disertai banyak contoh kode yang bisa langsung dijalankan dan dimodifikasi.
-  - title: Bahasa Indonesia
-    details: Panduan lengkap dalam Bahasa Indonesia yang mudah dipahami.
+  - icon: 📚
+    title: Kurikulum Terstruktur
+    details: Materi disusun bertahap mulai dari sintaks dasar, logika pemrograman, hingga database engineering.
+  - icon: 💻
+    title: Praktis & Interaktif
+    details: Disertai ratusan contoh kode nyata yang bisa langsung Anda coba dan modifikasi.
+  - icon: 🇮🇩
+    title: Bahasa Indonesia
+    details: Tutorial ditulis dalam Bahasa Indonesia yang santai, mudah dipahami, dan ramah pemula.
+  - icon: ⚡
+    title: Modern & Cepat
+    details: Website dokumentasi yang super cepat dan nyaman dibaca di desktop maupun HP.
 ---
 
-# Selamat Datang di Gua Ilmu Pemrograman
+<div style="text-align: center; margin-top: 2rem;">
+  <h2>Mengapa Belajar di Sini?</h2>
+  <p style="color: grey;">Kami menyajikan materi kompleks menjadi sederhana.</p>
+</div>
 
-Website ini berisi dokumentasi dan tutorial lengkap untuk mempelajari bahasa pemrograman **Python**. Materi kami mencakup:
+<br>
 
-::: info 🚀 **Dasar Pemrograman**
-Memahami sintaks dasar, variabel, tipe data, logika percabangan, dan perulangan.
+::: info 🎯 **Dasar yang Kuat**
+Mulai petualanganmu dengan memahami fondasi penting: **Variabel**, **Tipe Data**, hingga **Logika Percabangan** yang menjadi inti setiap program komputer.
 :::
 
-::: tip 💡 **Topik Lanjutan**
-Belajar menangani file (JSON, CSV), modul, Regex, dan manajemen error yang baik.
+::: tip 💡 **Skill Industri**
+Naikkan level skillmu dengan materi lanjutan: **JSON Parsing**, **Manipulasi CSV**, **Regex**, dan cara menangani **Error** agar aplikasimu anti-crash.
 :::
 
-::: warning 🔥 **Database Engineering**
-Praktik langsung membuat aplikasi database menggunakan SQLite dan Python.
+::: danger 🔥 **Real World Project**
+Jangan cuma teori! Di sini kamu akan belajar membuat **Aplikasi Database SQLite** sungguhan untuk manajemen data siswa.
 :::
 
-## Mulai Langkahmu Sekarang!
+---
 
-Pilih materi dari menu di sidebar kiri atau klik tombol di atas untuk memulai perjalanan belajarmu.
+<center>
+
+### Siap Menjadi Programmer Python?
+
+Jangan tunda lagi. Skill pemrograman adalah investasi terbaik untuk masa depanmu.
+
+[**Mulai Baca Modul Pertama ➔**](/Pendahuluan){.vitepress-btn}
+
+</center>
+
+<style>
+.vitepress-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--vp-c-brand);
+  color: white !important;
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.vitepress-btn:hover {
+  background-color: var(--vp-c-brand-dark);
+  transform: translateY(-2px);
+}
+</style>
