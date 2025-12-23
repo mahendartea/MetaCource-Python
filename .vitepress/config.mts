@@ -7,6 +7,12 @@ export default defineConfig({
     base: '/MetaCource-Python/', // Penting untuk GitHub Pages! Sesuaikan dengan nama repo.
     ignoreDeadLinks: true,
 
+    head: [
+        ['link', { rel: 'icon', type: 'image/png', href: '/MetaCource-Python/logo.png' }],
+        ['link', { rel: 'apple-touch-icon', href: '/MetaCource-Python/logo.png' }]
+    ],
+
+
 
 
     themeConfig: {
@@ -55,9 +61,11 @@ export default defineConfig({
                     { text: '16. Database SQLite', link: '/Database' },
                     { text: '17. Database MySQL', link: '/DatabaseMySQL' },
                     { text: '18. Module Numpy', link: '/ModuleNumpy' },
+                    { text: '19. Module Pandas', link: '/ModulePandas' },
                 ]
             }
         ],
+
 
 
 
