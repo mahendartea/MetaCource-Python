@@ -4,7 +4,8 @@ layout: home
 hero:
   name: Gua Ilmu Pemrograman
   text: Tutorial Python Modern
-  tagline: Belajar Python dari nol hingga mahir dengan panduan terstruktur, praktis, dan gratis.
+  tagline: Belajar Python dari nol hingga mahir. Oleh Mahendar Dwi Payana.
+
   actions:
     - theme: brand
       text: Mulai Belajar Sekarang

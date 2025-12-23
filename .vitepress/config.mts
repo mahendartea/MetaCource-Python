@@ -10,7 +10,7 @@ export default defineConfig({
 
 
     themeConfig: {
-        logo: '/image.png',
+        logo: '/logo.png', // Ganti ke logo baru yang akan kita buat
         siteTitle: 'Gua Ilmu Pemrograman',
 
         nav: [
@@ -62,9 +62,10 @@ export default defineConfig({
         ],
 
         footer: {
-            message: 'Dibuat dengan ❤️ menggunakan Python & VitePress.',
+            message: 'Ditulis dan dikembangkan oleh Mahendar Dwi Payana.',
             copyright: 'Copyright © 2025 Gua Ilmu Pemrograman'
         },
+
 
         search: {
             provider: 'local'
