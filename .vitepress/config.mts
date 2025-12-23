@@ -53,9 +53,11 @@ export default defineConfig({
                 collapsed: false,
                 items: [
                     { text: '16. Database SQLite', link: '/Database' },
+                    { text: '📌 Project Data Siswa', link: '/source-database/README' },
                 ]
             }
         ],
+
 
         socialLinks: [
             { icon: 'github', link: 'https://github.com/mahendartea' }
