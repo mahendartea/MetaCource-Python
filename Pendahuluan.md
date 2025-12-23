@@ -1,6 +1,6 @@
-<h1> Pendahuluan </h1>
+<h1> 🏁 Pendahuluan </h1>
 
-## 1. Pendahuluan 
+## 🚀 1. Pendahuluan 
 
 python adalah bahasa pemrograman yang dinamis, artinya tipe data dapat berubah-ubah tiap kali program dijalankan. python ini merupakan bahasa pemrograman yang paling populer di dunia.
 
@@ -34,7 +34,7 @@ Merunut amazon Python adalah bahasa pemrograman yang banyak digunakan dalam apli
 - Intepreter dan Compiler [Interpreter vs Compiler](https://builtin.com/software-engineering-perspectives/compiler-vs-interpreter)
 
 
-## 2. Instalasi Python
+## ⚙️ 2. Instalasi Python
 
 ![windows](https://www.python.org/static/img/python-logo.png)
 
@@ -54,7 +54,7 @@ untuk menginstall python di linux dapat mengunjungi website berikut : [link](htt
 > Python versi Python versi 3.12.3 [download](https://www.python.org/downloads/)
 
 
-## 3. Mengapa python
+## ❓ 3. Mengapa Python?
 
 Mengapa kita belajar pemrograman python? karena beberapa alasan yaitu seperti berikut:
 
@@ -67,7 +67,7 @@ Mengapa kita belajar pemrograman python? karena beberapa alasan yaitu seperti be
 - **Open Source**: Dapat diakses secara gratis
 - **multiparadigma**: dapat digunakan secara fungsional maupun OOP
 
-## 4. Penulisan Script Python
+## ✍️ 4. Penulisan Script Python
 
 ### 4.1 Penulisan Script
 Setiap bahasa pemrograman memiliki blok struktur tersendiri untuk membuat program. Secara umum, struktur bahasa pemrograman python seperti berikut : 
@@ -142,7 +142,7 @@ Python memiliki keyword yang digunakan untuk membuat program.
 | yield | yield |
 
 
-[<<kembali](README.md)
+[⬅️ Kembali ke Menu Utama](README.md)
 
 
 

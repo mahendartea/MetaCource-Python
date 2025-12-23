@@ -1,10 +1,10 @@
-<h1> Fungsi/Function </h1>
+<h1> 🛠️ Fungsi/Function </h1>
 
-## 1. Definisi
+## 📖 1. Definisi
 Fungsi digunakan untuk mengimplementasikan konsep modular(modularity) pada Python. Fungsi ini digunakan untuk menyelesaikan masalah pada program. Fungsi bertugas untuk menjalankan serangkaian perintah secara spesifik. Selama ini kita sudah menggunakan beberapa fungsi bawaan dari python `buldin function`, seperti `print()`, `input()`, `len()`, `append()`, dan lain-lain.
 Namun kita dapat membuat fungsi sendiri sesuai kebutuhan. Fungsi yang kita buat sendiri disebut `user defined function`. Fungsi ini dapat digunakan pada program kita sendiri.
 
-## 2. Membuat Fungsi
+## 🏗️ 2. Membuat Fungsi
 cara membuat fungsi pada python:
 ```python
 def nama_fungsi(daftar_parameter):
@@ -30,7 +30,7 @@ def hello():
 hello()
 ```
 
-## 3. Fungsi dengan Parameter
+## 🔢 3. Fungsi dengan Parameter
 
 Dalam `function` pada pemrograman python dapat menggunakan `parameter` sehingga saat pemanggilan `function` user dapat memberikan argument di dalamnya.
 
@@ -57,7 +57,7 @@ luas = luas_segitiga(10, 5)
 print(luas)
 ```
 
-## 4. Arbitrary Arguments
+## 🎲 4. Arbitrary Arguments
 
 Dalam `function` pada pemrograman python ada cara penggunaan `arbitrary arguments`. Arbitrary arguments adalah argument yang tidak didefinisikan sebelumnya. Artinya ketika kita tidak mengetahui parameter yang dapat diinput user, kita bisa menggunakan `arbitrary arguments`.
 
@@ -72,7 +72,7 @@ def my_function(*kids):
 my_function("Emil", "Tobias", "Linus")
 ```
 
-## 5. ArbitraryArgument Keyword, **
+## 🔑 5. Arbitrary Argument Keyword, **
 
 jika kita menggunakan `arbitrary arguments` pada function, kita juga bisa menggunakan `arbitrary arguments` pada `keyword arguments`
 
@@ -83,7 +83,7 @@ def my_function(child3, child2, child1):
 my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
 ```
 
-## 6. Parameter Default
+## ⚙️ 6. Parameter Default
 
 parameter default adalah parameter yang diinputkan secara otomatis ketika sebuah `function` dipanggil.
 
@@ -96,7 +96,7 @@ my_function()
 my_function("India")
 ```
 
-## 7. Passing sebuah list sebagai argument
+## 📜 7. Passing sebuah list sebagai argument
 
 kita bisa memasukkan sebuah list sebagai argument pada sebuah `function`
 
@@ -108,7 +108,7 @@ def my_function(food):
 fruits = ["apple", "banana", "cherry"]
 ```
 
-## 8. Docstring
+## 📝 8. Docstring
 
 docstring adalah sebuah teks yang menunjukkan apa yang terlihat pada sebuah `function`. Docstring ini biasanya dituliskan pada `function` yang kita buat.
 
@@ -122,7 +122,7 @@ def suhu_udara (daerah, derajat = 30, satuan = 'celcius'):
   print("Suhu di {} adalah {} {}".format(daerah, derajat, satuan))
 ```
 
-### 1. Latihan 1
+## 🏗️ Latihan
 ```python
 def persentase (total, jumlah):
   if (total >= 0 and total <= jumlah):
@@ -231,4 +231,4 @@ if __name__ == "__main__":
         show_menu()
 ```
 
-[<<Kembali](README.md)
+[⬅️ Kembali ke Menu Utama](README.md)

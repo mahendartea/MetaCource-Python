@@ -1,11 +1,11 @@
-<h1>Perulangan</h1>
+<h1> 🔄 Perulangan </h1>
 
-## Pengertian Perulangan atau `Looping`
+## 📖 Pengertian Perulangan atau `Looping`
 
 Perulangan atau looping adalah proses yang dilakukan secara berulang-ulang. Dalam membuat program sering dihadapkan untuk menyelesaikan pernyataan yang berulang, dan bila dilakukan dengan cara manual maka membutuhkan peritah yang banyak untuk melakukan hal yang sama. Masalah tersebut dapat diselesaikan dengan menggunakan perintah perulangan atau `looping`.
 Dalam bahasa pemrograman Python terdapat dua tipe perulangan yaitu `For` dan `While`. for adalah jenis *counted loop* dan while adalah jenis *uncounted loop*.
 
-## 1. Perulangan `For`
+## 🔢 1. Perulangan `For`
 Bentuk perulangan `for` digunakan untuk perulangan yang sudah pasti (*counted loop*).
 
 ```python
@@ -73,7 +73,7 @@ else:
 ```
 > Output: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, Loop selesai
 
-## 2. Perulangan `While`
+## ♾️ 2. Perulangan `While`
 Bentuk perulangan `while` digunakan untuk perulangan yang belum pasti (*uncounted loop*). Di dalam blok perulangan akan diulang secara terus menerus selama kondisi terpenuhi, blok akan berhentu apabila syarat untuk melakukan perulangan tidak terpenuhi untuk melakukan proses perulangan. 
 
 ```python
@@ -139,7 +139,7 @@ flowchart while
 [sumber](https://www.programiz.com/python-programming/while-loop)
 
 
-## Latihan
+## 📝 Latihan
 ### 1. Latihan Mencari Bilangan Prima
 ```python
 jawab = "y"
@@ -177,4 +177,4 @@ while jawab == "y":
     jawab = input("Apakah anda ingin melanjutkan (y/t)? ")
 ```
 
-[<<Kembali](README.md)
+[⬅️ Kembali ke Menu Utama](README.md)

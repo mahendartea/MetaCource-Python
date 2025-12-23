@@ -1,8 +1,6 @@
-<h1> Input & Output </h1>
+<h1> ⌨️ Input & Output </h1>
 
-Input Output pada Pemrograman Python
-
-## 1.1 Input
+## 📥 1.1 Input
 
 ### 1.1.1 Input dari User
 
@@ -41,7 +39,7 @@ hasil = ((uts*0.3) + (tugas*0.2) + (uas*0.5))
 
 ```
 
-## 1.2 Output
+## 📤 1.2 Output
 
 ### 1.2.1 Output ke layar
 
@@ -61,7 +59,7 @@ print("Nilai tugas : ", tugas)
 print("Nilai Uas : ", uas)
 print("Hasil akhir nilai mahasiswa adalah : ",hasil)
 ```
-## 1.3 Input & Output pada File
+## 📁 1.3 Input & Output pada File
 
 ### 1.3.1 Input dari File
 
@@ -83,7 +81,7 @@ with open('file.txt', 'w') as file:
     print("Data telah ditambahkan")
 ```
 
-## 1.4 Input & Output pada Database
+## 🗄️ 1.4 Input & Output pada Database
 
 ### 1.4.1 Input dari Database
 
@@ -95,7 +93,7 @@ with open('database.db', 'r') as database:
     print(content)
 ```
 
-## Latihan
+## 📝 Latihan
 ### 1. Input dan Output Karyawan dan Gaji
 
 ```python
@@ -135,4 +133,4 @@ kelvin = celcius + 273
 print("Nilai Kelvin \t:", kelvin)
 ```
 
-[<<Kembali](README.md)
+[⬅️ Kembali ke Menu Utama](README.md)

@@ -1,15 +1,15 @@
-<h1> Operator Kondisi </h1>
+<h1> 🔀 Operator Kondisi </h1>
 
 # Kondisi pada Pemrograman Python
 
-## PreRequisite
+## 📚 PreRequisite
 - Algoritma
 - Diagram Alur
 - Strukut Data
 
 Cek di [Algoritma](https://www.dicoding.com/blog/flowchart-adalah/)
 
-## 1.1 Kondisi 
+## 🛠️ 1.1 Kondisi 
 
 ### 1.1.1 Kondisi if
 
@@ -178,7 +178,7 @@ elif a not in b:
     print("Salah")
 ```
 
-## 2.1 Switch Case
+## 🔄 2.1 Switch Case
 
 ### 2.1.1 Switch Case
 
@@ -205,7 +205,7 @@ match inputan:
 ```
 
 
-## 3.1 Ternary Operator
+## ⚖️ 3.1 Ternary Operator
 
 ### 3.1.1 Ternary Operator
 
@@ -219,7 +219,7 @@ a = 10
 print("Benar") if a == 10 else print("Salah")
 ```
 
-## Latihan
+## 📝 Latihan
 ### 1. Nilai mahasiswa
 ```python
 nim = int(input("Masukan Nomor Induk Mahasiswa : "))
@@ -296,6 +296,6 @@ kode_hari = int(input("Masukan kode hari : "))
 print("Hari ini adalah : ", switch(kode_hari))
 ``` 
 
-[<<Kembali](README.md)
+[⬅️ Kembali ke Menu Utama](README.md)
 
 

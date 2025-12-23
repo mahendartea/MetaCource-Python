@@ -1,6 +1,6 @@
-<h1>Operasi Pada Python</h1>
+<h1> ➕ Operasi Pada Python </h1>
 
-## Pengertian Operasi pada Python
+## 📖 Pengertian Operasi pada Python
 Operation atau operasi adalah suatu proses yang dilakukan pada suatu data. Contoh operasi yang sering digunakan adalah operasi aritmatika, logika, dan lainnya.
 
 Operasi pada pemrograman menggunhakan operator yang terbagi menjadi beberapa group yaitu:
@@ -13,7 +13,7 @@ Operasi pada pemrograman menggunhakan operator yang terbagi menjadi beberapa gro
 6. **Membership operators**: Operator membership adalah operator yang digunakan untuk melakukan operasi membership seperti in, not in. Contoh operator membership yaitu in, not in.
 7. **Bitwise operators**: Operator bitwise adalah operator yang digunakan untuk melakukan operasi bitwise seperti AND, OR, XOR, dan NOT. Contoh operator bitwise yaitu &, |, ^, dan ~.
 
-## Operand dan Operator
+## 🔢 Operand dan Operator
 `Operand` dan `Operator` sering digunakan pada saat membuat program, kita harus paham apa yang dimaksud dengan `operand` dan `operator`. Berikut penjelasannya
 
 - **Operand** : nilai yang digunakan dalam sebuah opersi, misalnya dalam sebuah operasi matematis.
@@ -22,7 +22,7 @@ Operasi pada pemrograman menggunhakan operator yang terbagi menjadi beberapa gro
 
 Contoh dalam operasi matematika seperti berikut: `A+B` maka `A` dan `B` adalah `Operand` dan `+` adalah `Operator`.
 
-## Operator Unary, Binary, Ternary
+## 🧬 Operator Unary, Binary, Ternary
 Berdasarkan jumlah `operand`nya maka kita mengenal operator : `unary`, `binary`, dan `ternary`. Berikut deskripsi tentang ketiganya.
 
 1. **Unary Operator**: Operator unary adalah operator yang digunakan untuk melakukan operasi unary, seperti negasi, increment, decrement, dan lain-lain. Contoh operator unary yaitu -.
@@ -70,7 +70,7 @@ Tujuan operator ini adalah untuk memutuskan nilai mana yang akan diberikan ke va
     print("a lebih besar" if a > b else "b lebih besar")
     ```
 
-## 1. Operator Aritmatika
+## 📐 1. Operator Aritmatika
 Contoh operasi aritmatika yaitu:
 
 ```python
@@ -85,7 +85,7 @@ print(a % b) # 0
 print(a ** b) # 100000
 print(a // b) # 2
 ```
-## 2. Operator Assignment (Penugasan)
+## ✍️ 2. Operator Assignment (Penugasan)
 Contoh operasi assignment yaitu:
 
 ```python
@@ -103,7 +103,7 @@ a //= b
 print(a)
 ```
 
-## 3. Operator Pembanding
+## ⚖️ 3. Operator Pembanding
 Contoh operasi pembanding yaitu:
 
 ```python
@@ -117,7 +117,7 @@ print(a < b) # False
 print(a >= b) # True
 print(a <= b) # False
 ```
-## 4. Operator Logika
+## 🧠 4. Operator Logika
 Contoh operasi logika yaitu:
 
 bahan logika [link](https://p2k.stekom.ac.id/ensiklopedia/Tabel_kebenaran)
@@ -135,7 +135,7 @@ print(a > b or a < b) # True
 print(a < b or a > b) # True
 print(a < b or a < b) # False
 ```
-## 5. Operator Identitas
+## 🆔 5. Operator Identitas
 Contoh operasi identitas yaitu:
 
 ```python
@@ -145,7 +145,7 @@ b = 5
 print(a is b) # False
 print(a is not b) # True
 ```
-## 6. Operator Membership
+## 👥 6. Operator Membership
 Contoh operasi membership yaitu:
 
 ```python
@@ -156,7 +156,7 @@ print(a in [1, 2, 3, 4, 5]) # false
 print(a not in [1, 2, 3, 4, 5]) # true
 ```
 
-## 7. Operator Bitwise
+## 👾 7. Operator Bitwise
 Contoh operasi bitwise yaitu:
 
 ```python
@@ -169,7 +169,7 @@ print(a ^ b) # 15
 print(~a) # -11
 ```
 
-## Latihan
+## 📝 Latihan
 ### 1. Membuat aplikasi luas segitiga sederhana
 ```python
 alas = int(input("Masukkan alas segitiga: "))
@@ -201,5 +201,5 @@ print("Luas lingkaran adalah", luas)
 print("Keliling lingkaran adalah", keliling)
 ```
 
-[<<Kembali](README.md)
+[⬅️ Kembali ke Menu Utama](README.md)
 

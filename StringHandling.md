@@ -1,6 +1,6 @@
-# String Handling
+# 📝 String Handling
 
-## 1. Multiline String
+## 📑 1. Multiline String
 
 Multiline string adalah string yang terdiri dari beberapa baris. Contoh:
 
@@ -21,7 +21,7 @@ ut labore et dolore magna aliqua.'''
 print(a)
 ```
 
-## 2. Slicing
+## 🔪 2. Slicing
 
 Slicing adalah operasi yang digunakan untuk mengambil bagian dari sebuah string. Contoh:
 
@@ -63,7 +63,7 @@ print(a[-5:-2])
 ```
 > contoh diatas mengambil bagian dari posisi karakter `-5` sampai `-2`
 
-## 3. Modifikasi String
+## 🛠️ 3. Modifikasi String
 
 ### 3.1 Uppercase
 
@@ -164,7 +164,7 @@ contoh adalah sebagai berikut
 txt = "We are the so-called \"Vikings\" from the north."
 ```
 
-### 3.11 String Method
+## ⛓️ 4. String Method
 
 Terdapat beberapa function bawaan python yang dapat digunakan pada string
 

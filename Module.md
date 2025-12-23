@@ -1,6 +1,6 @@
-<h1> Module </h1>
+<h1> 🧩 Module </h1>
 
-## 1. Pendahuluan Module
+## 📖 1. Pendahuluan Module
 
 ### 1.1. Apa itu Module?
 
@@ -23,7 +23,7 @@ Module pada python merupakan sebuah library yang berisi fungsi-fungsi yang dapat
 - seaborn
 - dll
 
-## 2. Membuat Module sendiri
+## 🏗️ 2. Membuat Module sendiri
 
 ### 2.1. Membuat module sendiri
 
@@ -63,7 +63,7 @@ import mymodule
 a = mymodule.person1["age"]
 print(a)
 ```
-## 3. Memberikan nama module
+## 🏷️ 3. Memberikan nama module
 
 untuk memberikan nama pada sebuah module kita bisa menggunakan `as` saat module digunakan/dipanggil.
 
@@ -74,7 +74,7 @@ a = mm.person1["age"]
 print(a)
 ```
 
-## 4. Mengimport module Built-in
+## 📥 4. Mengimport module Built-in
 
 kita bisa menggunakan `import` untuk mengimport module built-in
 
@@ -92,7 +92,7 @@ import platform
 print(platform.system())
 ```
 
-## 5. Mengimport module dari package
+## 📦 5. Mengimport module dari package
 
 kita bisa menggunakan `from` untuk mengimport module dari package
 
@@ -125,7 +125,7 @@ a = person1["age"]
 print(a)
 ```
 
-## 6. Mengimport semua module
+## 🌟 6. Mengimport semua module
 
 kita bisa menggunakan `from` untuk mengimport semua module dari package
 
