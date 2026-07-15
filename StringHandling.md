@@ -103,7 +103,7 @@ print(a.strip())
 a = "Hello, World!"
 print(a.split(","))
 ```
-> contoh diatas memecah string menjadi array akan mengembalikan array yaitu `['Hello', ' World!']`
+> contoh diatas memecah string berdasarkan pemisah koma `,` menjadi objek **list** dan mengembalikan: `['Hello', ' World!']`
 
 ### 3.6 Concatenation
 
@@ -137,6 +137,14 @@ age = 36
 txt = f"My name is John, I am {age}"
 print(txt)
 ```
+
+> **Modern F-String (Python 3.8+)**: Kita dapat menggunakan tanda `=` di dalam f-string untuk mencetak nama variabel sekaligus nilainya secara otomatis (sangat berguna untuk debugging).
+> ```python
+> x = 10
+> print(f"{x=}")  # Output: x=10
+> ```
+> 
+> **F-String Lanjutan (Python 3.12+)**: Di Python 3.12+, f-string kini mendukung tanda kutip yang sama di dalam ekspresi, baris baru (*newline*), komentar, dan karakter backslash secara langsung di dalam kurung kurawal `{}`.
 ### 3.9 Placeholder dan Modifier
 
 ```python

@@ -17,26 +17,24 @@ nama = input("Masukkan nama Anda: ")
 print(f"Halo, {nama}!")
 ```
 
-Contoh lain penggunaan input 
+Contoh lain penggunaan input:
 
 ```python
-nim = str(input("Masukan NIM \t:"))
-nama = str(input("Masukan Nama \t:"))
-uts = int(input("Masukan Nilai UTS \t:"))
+nim = input("Masukan NIM \t:") # Tidak perlu str() karena input() mengembalikan string secara default
+nama = input("Masukan Nama \t:")
+uts = int(input("Masukan Nilai UTS \t:")) # Perlu int() untuk mengubah input ke bilangan bulat
 tugas = int(input("Masukan nilai tugas\t:"))
 uas = int(input("Masukan Nilai UAS \t:"))
 ```
 
-Contoh kasus lain 
+Contoh kasus lain:
 ```python
 nim = int(input("Masukan Nomor Induk Mahasiswa : "))
-nama = str(input("Masukan Nama Mahasiswa: "))
+nama = input("Masukan Nama Mahasiswa: ")
 uts = float(input("Masukan nilai UTS: "))
 tugas = float(input("Masukan nilai Tugas: "))
 uas = float(input("Masukan nilai UAS: "))
 hasil = ((uts*0.3) + (tugas*0.2) + (uas*0.5))
-
-
 ```
 
 ## 📤 1.2 Output
@@ -81,23 +79,49 @@ with open('file.txt', 'w') as file:
     print("Data telah ditambahkan")
 ```
 
-## 🗄️ 1.4 Input & Output pada Database
+## 🗄️ 1.4 Input & Output pada Database (SQLite)
 
-### 1.4.1 Input dari Database
+Untuk berinteraksi dengan database (seperti SQLite), kita tidak menggunakan fungsi `open()` biasa karena file database berbentuk biner. Sebaliknya, Python menyediakan modul bawaan bernama `sqlite3` untuk menghubungkan, membaca, dan menulis data ke database.
 
-Untuk mengambil input dari database dapat menggunakan fungsi `open()`. Fungsi ini akan membuka database yang diberikan dan mengembalikan objek database.
-
+### 1.4.1 Membaca Data dari Database
 ```python
-with open('database.db', 'r') as database:
-    content = database.read()
-    print(content)
+import sqlite3
+
+# Menghubungkan ke file database SQLite (otomatis membuat jika belum ada)
+conn = sqlite3.connect('database.db')
+cursor = conn.cursor()
+
+# Membaca data menggunakan query SQL
+cursor.execute("SELECT * FROM siswa")
+data_siswa = cursor.fetchall()
+
+for siswa in data_siswa:
+    print(siswa)
+
+# Menutup koneksi database
+conn.close()
+```
+
+### 1.4.2 Menulis Data ke Database
+```python
+import sqlite3
+
+conn = sqlite3.connect('database.db')
+cursor = conn.cursor()
+
+# Menyisipkan data baru ke tabel
+cursor.execute("INSERT INTO siswa (nama, kelas) VALUES ('Budi', 'XII-A')")
+conn.commit()  # Simpan perubahan
+
+print("Data berhasil ditambahkan")
+conn.close()
 ```
 
 ## 📝 Latihan
 ### 1. Input dan Output Karyawan dan Gaji
 
 ```python
-nama = str(input("Masukkan Nama Karyawan \t:"))
+nama = input("Masukkan Nama Karyawan \t:")
 gaji = int(input("Masukkan Gaji Karyawan \t:"))
 print("Nama Karyawan \t:", nama)
 print("Gaji Karyawan \t: {:,.2f}".format(gaji))
@@ -111,7 +135,7 @@ print("Gaji Bersih Karyawan \t: {:,.2f}".format(gaji_bersih))
 ```
 ### 2. Input dan Output Nilai
 ```python
-nama = str(input("Masukkan Nama \t:"))
+nama = input("Masukkan Nama \t:")
 nilai = int(input("Masukkan Nilai \t:"))
 print("Nama \t:", nama)
 print("Nilai \t:", nilai)

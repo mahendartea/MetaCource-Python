@@ -67,20 +67,22 @@ contoh:
 
 ```python
 def my_function(*kids):
-  print("The youngest child is " + kids[2])
+  print(f"The youngest child is {kids[2]}")
 
 my_function("Emil", "Tobias", "Linus")
 ```
 
-## 🔑 5. Arbitrary Argument Keyword, **
+## 📑 5. Arbitrary Keyword Arguments (`**kwargs`)
 
-jika kita menggunakan `arbitrary arguments` pada function, kita juga bisa menggunakan `arbitrary arguments` pada `keyword arguments`
+Jika Anda tidak tahu berapa banyak *keyword arguments* (argumen dengan nama) yang akan dimasukkan ke dalam fungsi, tambahkan dua tanda bintang `**` sebelum nama parameter di definisi fungsi. 
+
+Fungsi akan menerima argumen tersebut dalam bentuk **dictionary**.
 
 ```python
-def my_function(child3, child2, child1):
-  print("The youngest child is " + child3)
+def my_function(**kid):
+  print(f"His last name is {kid['lname']}")
 
-my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
+my_function(fname = "Tobias", lname = "Refsnes")
 ```
 
 ## ⚙️ 6. Parameter Default
@@ -98,14 +100,16 @@ my_function("India")
 
 ## 📜 7. Passing sebuah list sebagai argument
 
-kita bisa memasukkan sebuah list sebagai argument pada sebuah `function`
+Kita bisa mengirimkan tipe data kolektif seperti `list` sebagai argumen ke dalam fungsi, dan fungsi tersebut dapat mengiterasinya.
 
 ```python
-def my_function(food):
-  for x in food:
-    print(x)
+def cetak_buah(daftar_buah):
+  for buah in daftar_buah:
+    print(buah)
 
 fruits = ["apple", "banana", "cherry"]
+cetak_buah(fruits) # Memanggil fungsi dengan argumen list
+```
 ```
 
 ## 📝 8. Docstring
@@ -149,13 +153,13 @@ def help():
     nama = "Programku"
     versi = "1.0.2"
     # mengakses variabel lokal
-    print "Nama: %s" % nama
-    print "Versi: %s" % versi
+    print(f"Nama: {nama}")
+    print(f"Versi: {versi}")
 
 
 # mengakses variabel global
-print "Nama: %s" % nama
-print "Versi: %s" % versi
+print(f"Nama: {nama}")
+print(f"Versi: {versi}")
 
 # memanggil fungsi help()
 help()
@@ -172,7 +176,7 @@ def show_data():
         print("Belum ada data")
     else:
         for indeks in range(len(buku)):
-            print("[%d] %s" % (indeks, buku[indeks]))
+            print(f"[{indeks}] {buku[indeks]}")
 
 # fungsi untuk menambahkan data
 def tambah_buku():
@@ -221,14 +225,17 @@ def show_menu():
     elif menu == 4:
         delete_data()
     elif menu == 5:
-        exit()
+        return False
     else:
         print("Salah pilih!")
+    return True
 
 if __name__ == "__main__":
     while True:
-        show_menu()
-        show_menu()
+        running = show_menu()
+        if not running:
+            print("Terima kasih!")
+            break
 ```
 
 [⬅️ Kembali ke Menu Utama](README.md)

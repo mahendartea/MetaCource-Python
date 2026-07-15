@@ -25,19 +25,25 @@ Contoh dalam operasi matematika seperti berikut: `A+B` maka `A` dan `B` adalah `
 ## 🧬 Operator Unary, Binary, Ternary
 Berdasarkan jumlah `operand`nya maka kita mengenal operator : `unary`, `binary`, dan `ternary`. Berikut deskripsi tentang ketiganya.
 
-1. **Unary Operator**: Operator unary adalah operator yang digunakan untuk melakukan operasi unary, seperti negasi, increment, decrement, dan lain-lain. Contoh operator unary yaitu -.
+1. **Unary Operator**: Operator unary adalah operator yang hanya menggunakan satu operand. Contoh operator unary di Python adalah negasi (`-`).
 
-    |Operator|Nama Operator|Contoh|
-    |---|---|---
-    |unary|negasi|`-a`|
-    |unary|increment|`a++`|
-    |unary|decrement|`a--`|
+    > **PENTING**: Python **TIDAK MENDUKUNG** operator increment/decrement seperti `a++` atau `a--` seperti pada bahasa C/Java. Untuk menaikkan atau menurunkan nilai, Python menggunakan operator penugasan (*assignment*).
+
+    |Operator|Nama Operator|Contoh|Cara Kerja|
+    |---|---|---|---|
+    |`-`|negasi|`-a`|Mengubah nilai positif ke negatif atau sebaliknya|
+    |`+=`|increment|`a += 1`|Menaikkan nilai variabel `a` sebesar 1 (sama dengan `a = a + 1`)|
+    |`-=`|decrement|`a -= 1`|Menurunkan nilai variabel `a` sebesar 1 (sama dengan `a = a - 1`)|
 
     ```python
     a = 10
-    print(-a) # -10
-    print(a++) # 10 digunakan untuk looping
-    print(a--) # 11 digunakan untuk looping
+    print(-a)   # Output: -10
+    
+    a += 1
+    print(a)    # Output: 11
+    
+    a -= 1
+    print(a)    # Output: 10
     ```
 
 2. **Binary Operator**: Operator binary adalah operator yang digunakan untuk melakukan operasi binary, seperti penjumlahan, pengurangan, perkalian, dan pembagian. Contoh operator binary yaitu +.
@@ -58,10 +64,11 @@ Berdasarkan jumlah `operand`nya maka kita mengenal operator : `unary`, `binary`,
     print(a / b) # 2
     ```
 
-3. **Ternary Operator**: Operator ternary adalah operator yang digunakan untuk melakukan operasi ternary, seperti pengkondisian. Contoh operator ternary yaitu ?.
-Tujuan operator ini adalah untuk memutuskan nilai mana yang akan diberikan ke variabel. Sintaks dari operator ini adalah sebagai berikut:
-    ```
-    [on_true] if [expression] else [on_false]
+3. **Ternary Operator**: Operator ternary adalah operator yang mengevaluasi kondisi dan mengembalikan satu dari dua nilai berdasarkan hasil evaluasi tersebut. Python tidak menggunakan simbol `? :` seperti bahasa C/Java, melainkan menggunakan struktur kata kunci `if-else` dalam satu baris.
+
+    Sintaks ternary operator di Python adalah sebagai berikut:
+    ```python
+    [nilai_jika_true] if [kondisi] else [nilai_jika_false]
     ```
 
     ```python
@@ -174,7 +181,7 @@ print(~a) # -11
 ```python
 alas = int(input("Masukkan alas segitiga: "))
 tinggi = int(input("Masukkan tinggi segitiga: "))
-luas = 0.5 alas * tinggi
+luas = 0.5 * alas * tinggi
 print("Luas segitiga adalah", luas)
 ```
 ### 2. Membuat aplikasi kalkulator

@@ -61,22 +61,53 @@ a = 10
 a = float(a)
 print(type(a))
 ```
-## 📏 7. Konvensi
+## 📏 7. Aturan & Konvensi Penamaan
 
-1. Nama variable tidak boleh mengandung spasi, harus menggunakan underscore (`_`) sebagai pemisah antar kata. Contoh: `nama_variable`
-2. Nama variable tidak boleh mengandung karakter spesial, kecuali underscore (`_`). Contoh: `nama_variable`, `nama@variable`, `nama#variable`, `nama$variable`
+Ada beberapa aturan penting dalam menulis nama variabel di Python:
+1. Hanya boleh terdiri dari huruf (a-z, A-Z), angka (0-9), dan underscore (`_`).
+2. Karakter pertama **harus** berupa huruf atau underscore (`_`). Tidak boleh dimulai dengan angka.
+3. Bersifat *case-sensitive* (membedakan huruf besar dan kecil). Variabel `nama` berbeda dengan `Nama`.
+4. Tidak boleh menggunakan spasi atau karakter spesial (seperti `@`, `#`, `$`, `%`, dll).
+5. Tidak boleh menggunakan *Reserve Keyword* (kata kunci cadangan Python seperti `if`, `def`, `class`, dll).
 
-Contoh penamaan variable yang boleh seperti berikut
+**Contoh Penamaan Variabel yang BENAR (Diperbolehkan):**
 ```python
 nama = "budiawan"
 jabatan = "dosen"
 nilai_tinggi = 170
 nama1 = "budiawan rudi"
 _luas = 100
-nama@variable = "budiawan rudi"
 ```
 
-## 🔢 8. Multi-variable
+**Contoh Penamaan Variabel yang SALAH (Memicu SyntaxError):**
+```python
+1nama = "budiawan"          # SALAH: Diawali angka
+nama lengkap = "rudi"       # SALAH: Menggunakan spasi
+nama@variable = "budiawan"  # SALAH: Menggunakan karakter spesial @
+if = "aktif"                # SALAH: Menggunakan reserve keyword 'if'
+```
+
+## 🏷️ 8. Type Hinting (Python Modern)
+
+Di Python modern (Python 3.5+), Anda dapat menuliskan tipe data variabel secara eksplisit sebagai petunjuk (*type hints*). Konsep ini sangat populer dalam pengembangan aplikasi skala besar karena membuat kode lebih mudah dibaca dan didukung oleh editor modern (seperti VS Code/Cursor).
+
+**Cara penulisan Type Hinting:**
+```python
+nama_variabel: tipe_data = nilai
+```
+
+Contoh:
+```python
+nama: str = "Budi"
+umur: int = 20
+tinggi_badan: float = 170.5
+is_active: bool = True
+hobi: list = ["membaca", "coding"]
+```
+> **Catatan**: Type hinting bersifat opsional. Python tetap mendeteksi tipe data secara dinamis pada saat dijalankan (*runtime*), namun type hint sangat berguna untuk dokumentasi kode dan alat pengecek tipe data otomatis (seperti `mypy`).
+
+
+## 🔢 9. Multi-variable
 
 berikut contoh penggunaan multi-variable pada python:
 
@@ -86,9 +117,9 @@ print(a)
 print(b)
 print(c)
 ```
-## 🔍 9. Melihat semua isi variable pada multiple value
+## 🔍 10. Unpacking Multi-Value (Melihat semua isi variable)
 
-Cara melihat semua isi variable pada multiple value pada python:
+Cara mengurai (*unpacking*) nilai dari list ke beberapa variabel di Python:
 
 ```python
 fruit = ["apple", "banana", "orange"]

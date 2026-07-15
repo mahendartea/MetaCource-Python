@@ -145,15 +145,16 @@ flowchart while
 jawab = "y"
 while jawab == "y":
     angka = int(input("Masukkan angka: "))
-    if(angka > 1):
+    if angka > 1:
         for i in range(2, angka):
-            if(angka % i == 0):
-                print(angka, "bukan bilangan prima")
-                print("Karena ", i, "adalah kelipatan dari ", angka)
+            if angka % i == 0:
+                print(f"{angka} bukan bilangan prima")
+                print(f"Karena {angka} habis dibagi oleh {i}")
+                break
         else:
-            print(angka, "bukan bilangan prima")
+            print(f"{angka} adalah bilangan prima")
     else:
-        print(angka, "bukan bilangan prima")
+        print(f"{angka} bukan bilangan prima")
     print()
     jawab = input("Apakah anda ingin melanjutkan (y/t)? ")
 ```

@@ -4,20 +4,20 @@
 
 python adalah bahasa pemrograman yang dinamis, artinya tipe data dapat berubah-ubah tiap kali program dijalankan. python ini merupakan bahasa pemrograman yang paling populer di dunia.
 
-<!-- peringkat bahasa pemrograman 2023 -->
+<!-- peringkat bahasa pemrograman TIOBE Index 2026 -->
 
-| Peringkat | Bahasa pemrograman |
+| Peringkat | Bahasa Pemrograman |
 | --- | --- |
 | 1 | Python |
-| 2 | Java |
-| 3 | C++ |
-| 4 | C# |
-| 5 | JavaScript |
-| 6 | PHP |
-| 7 | Ruby |
-| 8 | Go |
-| 9 | Rust |
-| 10 | Kotlin |
+| 2 | C++ |
+| 3 | Java |
+| 4 | C |
+| 5 | C# |
+| 6 | JavaScript |
+| 7 | Go |
+| 8 | SQL |
+| 9 | Swift |
+| 10 | Rust |
 
 
 Python merupakan bahasa pemrograman komputer yang biasa dipakai untuk membangun situs, software/aplikasi, mengotomatiskan tugas dan melakukan analisis data. Bahasa pemrograman ini termasuk bahasa tujuan umum. Artinya, ia bisa digunakan untuk membuat berbagai program berbeda, bukan khusus untuk masalah tertentu saja. [sumber](https://bpti.uhamka.ac.id/sharing/mengenal-python-penjelasan-dan-penggunaannya/#:~:text=Python%20merupakan%20bahasa%20pemrograman%20komputer,khusus%20untuk%20masalah%20tertentu%20saja.)
@@ -106,40 +106,24 @@ print("Selamat Datang di pemrograman Python")
 ```
 
 ### 4.2 Reserve Keyword
-Python memiliki keyword yang digunakan untuk membuat program.
+Python memiliki keyword (kata kunci cadangan) yang sudah didefinisikan secara khusus dan tidak boleh digunakan sebagai nama variabel atau fungsi.
 
-| Keyword | Deskripsi |
-| --- | --- |
-| and | and |
-| as | as |
-| assert | assert |
-| break | break |
-| class | class |
-| continue | continue |
-| def | def |
-| del | del |
-| elif | elif |
-| else | else |
-| except | except |
-| finally | finally |
-| for | for |
-| from | from |
-| global | global |
-| if | if |
-| import | import |
-| in | in |
-| is | is |
-| lambda | lambda |
-| nonlocal | nonlocal |
-| not | not |
-| or | or |
-| pass | pass |
-| raise | raise |
-| return | return |
-| try | try |
-| while | while |
-| with | with |
-| yield | yield |
+Berikut adalah daftar lengkap 35 keyword bawaan Python:
+
+| Keyword | Keyword | Keyword | Keyword |
+| --- | --- | --- | --- |
+| `False` | `class` | `finally` | `is` |
+| `None` | `continue` | `for` | `lambda` |
+| `True` | `def` | `from` | `nonlocal` |
+| `and` | `del` | `global` | `not` |
+| `as` | `elif` | `if` | `or` |
+| `assert` | `else` | `import` | `pass` |
+| `async` | `except` | `in` | `raise` |
+| `await` | `break` | `return` | `try` |
+| `while` | `with` | `yield` | |
+
+> **Info Tambahan (Soft Keywords - Python 3.10+)**: 
+> Python juga memiliki beberapa kata kunci khusus (*soft keywords*) seperti `match`, `case`, dan `_` yang digunakan dalam operasi percabangan pola terstruktur (structural pattern matching). Berbeda dengan *reserve keyword*, *soft keywords* ini masih bisa digunakan sebagai nama variabel, namun sangat disarankan untuk dihindari agar kode tidak membingungkan.
 
 
 [⬅️ Kembali ke Menu Utama](README.md)

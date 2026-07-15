@@ -112,8 +112,8 @@ print('  4. Bagi \t [/]')
 print('=' * 25)
 
 operasi = input('Pilih operasi (1/2/3/4): ')
-bilangan_1 = eval(input('Masukkan bilangan pertama: '))
-bilangan_2 = eval(input('Masukkan bilangan kedua: '))
+bilangan_1 = float(input('Masukkan bilangan pertama: '))
+bilangan_2 = float(input('Masukkan bilangan kedua: '))
 
 print('=' * 25)
 

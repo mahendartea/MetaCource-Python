@@ -178,11 +178,11 @@ elif a not in b:
     print("Salah")
 ```
 
-## 🔄 2.1 Switch Case
+## 🔄 2.1 Switch Case (Match-Case di Python)
 
-### 2.1.1 Switch Case
+### 2.1.1 Percabangan Match-Case
 
-Switch Case merupakan sebuah percabangan yang akan dieksekusi jika sebuah syarat bernilai benar. Contoh: `switch (a) {case 10: print("Benar")}`
+Sejak Python 3.10, Python memperkenalkan fitur structural pattern matching menggunakan kata kunci `match` dan `case`. Fitur ini berfungsi mirip dengan `switch-case` pada bahasa pemrograman lain, membuat kode percabangan banyak kondisi menjadi lebih bersih dan mudah dibaca.
 
 contoh penggunaan switch case
 
@@ -207,16 +207,19 @@ match inputan:
 
 ## ⚖️ 3.1 Ternary Operator
 
-### 3.1.1 Ternary Operator
+Ternary Operator (atau ekspresi kondisional) digunakan untuk mengevaluasi suatu kondisi dalam satu baris kalimat kode. Berbeda dengan C/Java yang menggunakan simbol `? :`, Python menggunakan kata kunci `if` dan `else`.
 
-Ternary Operator merupakan sebuah percabangan yang akan dieksekusi jika sebuah syarat bernilai benar. Contoh: `a == 10 ? print("Benar") : print("Salah")`
+Sintaks:
+```python
+[nilai_jika_true] if [kondisi] else [nilai_jika_false]
+```
 
-Contoh penggunaan ternary operator
+Contoh penggunaan ternary operator:
 
 ```python
 a = 10
-
-print("Benar") if a == 10 else print("Salah")
+status = "Genap" if a % 2 == 0 else "Ganjil"
+print(status) # Output: Genap
 ```
 
 ## 📝 Latihan
@@ -244,11 +247,11 @@ nama = str(input("Masukan Nama Mahasiswa: "))
 nilai = 60
 if nilai >= 80:
     grade = "A"
-else if nilai >= 70:
+elif nilai >= 70:
     grade = "B"
-else if nilai >= 60:
+elif nilai >= 60:
     grade = "C"
-else if nilai >= 50:
+elif nilai >= 50:
     grade = "D"
 else:
     grade = "E"
@@ -290,10 +293,22 @@ seleksi = {
 }
 
 def switch(namahari):
-    return selecksi.get(namahari, default)()
+    return seleksi.get(namahari, default)()
 
 kode_hari = int(input("Masukan kode hari : "))
-print("Hari ini adalah : ", switch(kode_hari))
+print("Hari ini adalah : ")
+switch(kode_hari)
+
+# Catatan Modern (Python 3.10+): 
+# Daripada mensimulasikan switch-case menggunakan dictionary dan fungsi seperti di atas,
+# sangat disarankan menggunakan match-case yang jauh lebih ringkas:
+#
+# match kode_hari:
+#     case 1: print("Senin")
+#     case 2: print("Selasa")
+#     ...
+#     case _: default()
+
 ``` 
 
 [⬅️ Kembali ke Menu Utama](README.md)

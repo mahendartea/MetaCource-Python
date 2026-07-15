@@ -53,7 +53,7 @@ Contoh lain implementasi tipe data string
 ```python
 ucapan = "hello"
 nama = "Budiawan"
-pesan = ucapata + ", "+ name + "!"
+pesan = f"{ucapan}, {nama}!" # Menggunakan f-string (modern)
 print(pesan)
 
 # Multiline string
@@ -77,7 +77,7 @@ is_active = True
 has_license = False
 
 # menggunakan boolean pada kondisi 
-if is_active
+if is_active:
     print("akun anda sudah aktif")
 else:
     print("akun anda belum aktif")
@@ -95,7 +95,7 @@ print("daftar angka: ", a)
 
 # akses elemen list
 print("Angka pertama:", a[0])
-print("Angka terakhir:", a[1])
+print("Angka terakhir:", a[-1]) # Menggunakan indeks negatif -1 untuk mengambil elemen terakhir
 
 #tambah daftar list
 a.append(6)
@@ -145,13 +145,19 @@ print("Dictionary after adding email:", example_dict)
 del example_dict["city"]
 print("Dictionary after removing city:", example_dict)
 
+# Dictionary Union (Python 3.9+) - Menggabungkan dua dictionary secara modern dengan operator '|'
+dict1 = {"a": 1, "b": 2}
+dict2 = {"b": 99, "c": 4}
+merged_dict = dict1 | dict2
+print("Merged Dictionary:", merged_dict) # Output: {'a': 1, 'b': 99, 'c': 4}
+
 # Dictionary comprehension
 squared_numbers = {x: x*x for x in range(6)}
 print("Dictionary of squared numbers:", squared_numbers)
 ```
 ## 🛡️ 8. Set
 
-Set atau tipe data set adalah tipe data yang berisi nilai yang tidak dapat diubah. Contoh: `{1, 2, 3, 4, 5}`
+Set adalah tipe data kumpulan nilai unik (tidak boleh ada duplikasi) yang tidak berurutan (*unordered*). Set sendiri bersifat *mutable* (elemennya bisa ditambah/dihapus), namun elemen di dalamnya harus bersifat *immutable* (tidak bisa diubah nilainya). Contoh: `{1, 2, 3, 4, 5}`
 
 ```python
 a = {1, 2, 3, 4, 5}
@@ -170,33 +176,30 @@ example_set.discard(2)
 print("Set after removing an element:", example_set)
 ```
 
-## 🛠️ 9. Fungsi Tipe Data
+## 🛠️ 9. Fungsi Tipe Data (Type Conversion)
 
-Fungsi tipe data ini digunakan untuk mengubah tipe data dari satu tipe ke tipe data yang lain. Contoh: `int(a)`, `float(a)`, `str(a)`
+Fungsi tipe data ini digunakan untuk mengubah tipe data dari satu tipe ke tipe data yang lain (type casting). Contoh: `int(a)`, `float(a)`, `str(a)`
 
 ```python
 a = 10
 a = float(a)
 print(type(a))
-b = long(a)
-print(type(b))
 c = str(a)
 print(type(c))
 ```
 
-**Beberapa fungsi tipe data adalah sebagai berikut :**
+**Beberapa fungsi tipe data yang umum digunakan di Python 3:**
 
-|**Nama Fungsi**|**Deskrips**i|
+|**Nama Fungsi**|**Deskripsi**|
 |---|---|
 |int()|Mengubah tipe data dari satu tipe ke tipe data **integer**.|
-|long()|Mengubah tipe data dari satu tipe ke tipe data **integer Panjang**.|
 |float()|Mengubah tipe data dari satu tipe ke tipe **float**.|
 |bool()|Mengubah tipe data dari satu tipe ke tipe data **boolean**.|
-|chr()|Mengubah tipe data dari satu tipe ke tipe data **char**.|
-|str()|Mengubah tipe data dari satu tipe ke tipe data **string**|
-|bin()|Mengubah tipe data dari satu tipe ke tipe data **binary**|
-|hex()|Mengubah tipe data dari satu tipe ke tipe data **hexadecimal**|
-|oct()|Mengubah tipe data dari satu tipe ke tipe data **octal**|
+|chr()|Mengubah kode integer (Unicode/ASCII) menjadi **string satu karakter**.|
+|str()|Mengubah tipe data dari satu tipe ke tipe data **string**.|
+|bin()|Mengubah tipe data integer ke format string **binary** (biner).|
+|hex()|Mengubah tipe data integer ke format string **hexadecimal**.|
+|oct()|Mengubah tipe data integer ke format string **octal**.|
 
 contoh
 

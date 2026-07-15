@@ -85,6 +85,23 @@ pip install -r requirements.txt
 
 ---
 
+## 🔥 Alternatif Modern (Kekinian)
+
+Dalam industri pengembangan Python saat ini, banyak developer dan tim proyek beralih dari kombinasi tradisional `pip + venv` ke alat pengelola paket modern yang jauh lebih cepat dan terintegrasi:
+
+### 1. **uv** (oleh Astral)
+`uv` adalah manajer paket Python yang ditulis dalam bahasa Rust. Alat ini memiliki kecepatan instalasi paket hingga **10-100 kali lebih cepat** dibandingkan `pip` tradisional, karena mengimplementasikan sistem caching yang sangat pintar.
+* Cara menginstal: `curl -LsSf https://astral.sh/uv/install.sh | sh` (di macOS/Linux)
+* Membuat virtual env: `uv venv`
+* Menginstal paket: `uv pip install requests`
+
+### 2. **Poetry**
+`Poetry` adalah alat manajemen dependensi dan pengemasan proyek yang serbaguna. Ia menggunakan satu file konfigurasi standar `pyproject.toml` untuk mengatur semua dependensi, versi Python, metadata proyek, dan melakukan *lock* dependensi secara otomatis (menjamin kecocokan versi library di komputer developer lain).
+* Membuat proyek baru: `poetry new nama-proyek`
+* Menambahkan paket: `poetry add requests`
+
+---
+
 ### 🛠️ Latihan Kecil
 Coba instal library `camelcase` dan gunakan untuk mengubah kalimat menjadi format camel case!
 

@@ -5,7 +5,7 @@ def show_data():
         print("Belum ada data")
     else:
         for indeks in range(len(buku)):
-            print("[%d] %s" % (indeks, buku[indeks]))
+            print(f"[{indeks}] {buku[indeks]}")
 
 # fungsi untuk menambahkan data
 def tambah_buku():
@@ -54,11 +54,14 @@ def show_menu():
     elif menu == 4:
         delete_data()
     elif menu == 5:
-        exit()
+        return False
     else:
         print("Salah pilih!")
+    return True
 
 if __name__ == "__main__":
     while True:
-        show_menu()
-        show_menu()
+        running = show_menu()
+        if not running:
+            print("Terima kasih!")
+            break
