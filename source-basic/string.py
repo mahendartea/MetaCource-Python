@@ -93,3 +93,28 @@ first_letter = sample_string[0]
 print("First letter:", first_letter)
 last_letter = sample_string[-1]
 print("Last letter:", last_letter)
+
+# ==========================================
+# LATIHAN-LATIHAN STRING
+# ==========================================
+
+# # 1. Format Biodata Sederhana
+# nama = input("Masukkan Nama: ")
+# pekerjaan = input("Masukkan Pekerjaan: ")
+# kota = input("Masukkan Kota Asal: ")
+# print(f"Halo, saya {nama}. Saya bekerja sebagai {pekerjaan} dan berasal dari {kota}.")
+
+# # 2. Validasi & Pembersihan Email
+# email = input("Masukkan email Anda: ")
+# email_bersih = email.strip().lower()
+# print(f"Email setelah dibersihkan: {email_bersih}")
+# apakah_gmail = "@gmail.com" in email_bersih
+# print(f"Apakah ini akun Gmail? {apakah_gmail}")
+
+# # 3. Slicing & Sensor Kata (Replace)
+# kalimat = "Belajar Python sangat menyenangkan dan seru!"
+# kata_pertama = kalimat[:7]
+# print(f"Kata pertama: {kata_pertama}")
+# kalimat_sensor = kalimat.replace("menyenangkan", "***********")
+# print(f"Kalimat setelah disensor: {kalimat_sensor}")
+

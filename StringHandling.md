@@ -193,6 +193,57 @@ Terdapat beberapa function bawaan python yang dapat digunakan pada string
 
 Liat link berikut untuk selengkapnya : [link](https://www.w3schools.com/python/python_strings_methods.asp)
 
+---
+
+## 📝 Latihan
+
+Berikut adalah beberapa latihan untuk menguji pemahaman Anda tentang manipulasi string di Python.
+
+### 1. Format Biodata Sederhana
+Buatlah program yang meminta input nama, pekerjaan, dan kota asal dari pengguna, lalu cetak kalimat perkenalan terformat menggunakan **f-string**.
+
+```python
+nama = input("Masukkan Nama: ")
+pekerjaan = input("Masukkan Pekerjaan: ")
+kota = input("Masukkan Kota Asal: ")
+
+# Output terformat menggunakan f-string
+print(f"Halo, saya {nama}. Saya bekerja sebagai {pekerjaan} dan berasal dari {kota}.")
+```
+
+### 2. Validasi & Pembersihan Email
+Buatlah program yang membersihkan input email dari spasi di awal/akhir, mengubahnya menjadi huruf kecil semua, lalu memeriksa apakah email tersebut menggunakan domain `@gmail.com`.
+
+```python
+email = input("Masukkan email Anda: ")
+# Hapus spasi di awal/akhir dan ubah jadi huruf kecil
+email_bersih = email.strip().lower()
+
+print(f"Email setelah dibersihkan: {email_bersih}")
+# Cek apakah email mengandung domain '@gmail.com'
+apakah_gmail = "@gmail.com" in email_bersih
+print(f"Apakah ini akun Gmail? {apakah_gmail}")
+```
+
+### 3. Slicing & Sensor Kata (Replace)
+Diberikan sebuah string `"Belajar Python sangat menyenangkan dan seru!"`. Buatlah program untuk:
+1. Mengambil kata pertama (`"Belajar"`) menggunakan teknik **Slicing**.
+2. Mengganti kata `"menyenangkan"` menjadi kata sensor `"***********"`.
+
+```python
+kalimat = "Belajar Python sangat menyenangkan dan seru!"
+
+# 1. Slicing kata pertama
+kata_pertama = kalimat[:7]
+print(f"Kata pertama: {kata_pertama}")
+
+# 2. Sensor kata "menyenangkan"
+kalimat_sensor = kalimat.replace("menyenangkan", "***********")
+print(f"Kalimat setelah disensor: {kalimat_sensor}")
+```
+
+[⬅️ Kembali ke Menu Utama](README.md)
+
 
 
 
