@@ -143,4 +143,34 @@ elif operasi == '4':
 else:
   print('Tidak valid')
 
+# ==========================================
+# LATIHAN-LATIHAN OPERASI
+# ==========================================
+
+# # 4. Menentukan Bilangan Ganjil atau Genap
+# angka = int(input("Masukkan sebuah bilangan bulat: "))
+# apakah_genap = (angka % 2 == 0)
+# print(f"Apakah bilangan {angka} adalah Genap? {apakah_genap}")
+
+# # 5. Penghitung Pangkat & Pembagian Apel (Floor Division & Modulo)
+# # 5.1 Menghitung pangkat
+# bilangan = int(input("Masukkan angka dasar: "))
+# pangkat = int(input("Masukkan pangkat: "))
+# hasil_pangkat = bilangan ** pangkat
+# print(f"{bilangan} pangkat {pangkat} adalah {hasil_pangkat}")
+# # 5.2 Floor division & Modulo
+# total_apel = int(input("Masukkan total apel: "))
+# jumlah_anak = int(input("Masukkan jumlah anak: "))
+# apel_per_anak = total_apel // jumlah_anak
+# sisa_apel = total_apel % jumlah_anak
+# print(f"Setiap anak mendapatkan {apel_per_anak} apel.")
+# print(f"Sisa apel yang tidak terbagi: {sisa_apel}")
+
+# # 6. Kelayakan Beasiswa (Operator Logika)
+# nilai_ipk = float(input("Masukkan nilai IPK Anda: "))
+# skor_toefl = int(input("Masukkan skor TOEFL Anda: "))
+# layak_beasiswa = (nilai_ipk >= 3.5) and (skor_toefl >= 500)
+# print(f"Apakah Anda layak menerima beasiswa? {layak_beasiswa}")
+
+
 
