@@ -22,6 +22,7 @@ export default defineConfig({
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Mulai Belajar', link: '/Pendahuluan' },
+            { text: 'Tugas Mandiri', link: '/Tugas1' },
             { text: 'Tentang', link: 'https://github.com/mahendartea/MetaCource-BasicPython' }
         ],
 
@@ -47,6 +48,7 @@ export default defineConfig({
                 items: [
                     { text: '9. Module', link: '/Module' },
                     { text: '10. Datetime', link: '/PythonDatetime' },
+                    { text: '📝 Tugas 1 (Pertemuan 1 - 10)', link: '/Tugas1' },
                     { text: '11. Regex', link: '/PythonRegex' },
                     { text: '12. PIP', link: '/PythonPIP' },
                     { text: '13. JSON', link: '/PythonJson' },

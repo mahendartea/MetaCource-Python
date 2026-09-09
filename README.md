@@ -43,6 +43,9 @@ Yang akan dipelajari pada kursus ini adalah sebagai berikut :
 ### 🗓️ 10. Python Datetime
 [Link](PythonDatetime.md)
 
+### 📝 Tugas 1 (Pertemuan 1 - 10)
+[Link](Tugas1.md)
+
 ### 🔍 11. Python Regex
 [Link](PythonRegex.md)
 
